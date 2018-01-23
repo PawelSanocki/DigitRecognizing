@@ -148,12 +148,12 @@ void Net::improve(float* results, int label)
 		}
 	}
 	// correcting the weights and biases
-	for (unsigned int i = this->net.size() - 1; i > 0; i--)
+	for (unsigned int i = 1; i < net.size(); i++)
 	{
 		for (unsigned int j = 0; j < net[i].layer.size(); j++)
 		{
 			net[i].layer[j].correct_weights();
-			net[i].layer[j].correct_bias();
+			//net[i].layer[j].correct_bias();
 			net[i].layer[j].error = 0;
 		}
 	}

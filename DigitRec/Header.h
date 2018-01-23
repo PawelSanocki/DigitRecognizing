@@ -13,7 +13,7 @@
 #include <queue>
 #include <windows.h>
 
-#define LEARNING_FACTOR 0.3																			// how fast should the net learn (how big impact on the weights and biases should have one sample)
+#define LEARNING_FACTOR 0.4																			// how fast should the net learn (how big impact on the weights and biases should have one sample)
 #define M_E 2.71828182845904523536																	// needed for sigmoid function
 #define N_HIDDEN 2																					// amount of hidden layers
 #define myNumberOfImages numberOfImages																// needed to easily set number of images for testing the program
